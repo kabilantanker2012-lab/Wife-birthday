@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#321326">
+<title>For My Wife, Deepica ❤️</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;color:#fff;font-family:Georgia,'Times New Roman',serif;background:linear-gradient(145deg,#210e20,#57233f 55%,#241126);overflow-x:hidden}
+main{min-height:100vh;display:grid;place-items:center;padding:24px 14px;position:relative}
+.wrap{width:min(100%,570px);text-align:center;padding:34px 24px;border:1px solid #ffd5e544;border-radius:30px;background:linear-gradient(160deg,#ffffff16,#ffffff08);box-shadow:0 25px 80px #0007;position:relative;z-index:1}
+.kicker{font:11px Arial,sans-serif;letter-spacing:4px;text-transform:uppercase;color:#f7c9d8}
+h1{font-size:clamp(38px,9vw,60px);font-weight:normal;line-height:1.05;color:#ffe0e9;margin:18px 0;text-shadow:0 0 22px #ff8bb477}
+.sub{font-size:18px;line-height:1.6;color:#ffeaf0;max-width:420px;margin:0 auto 18px}
+.flower{font-size:43px;display:block;margin:12px auto;animation:sway 3s ease-in-out infinite}
+@keyframes sway{50%{transform:rotate(10deg) scale(1.08)}}
+button{border:0;border-radius:30px;padding:15px 24px;background:linear-gradient(120deg,#ffe0a9,#f49ab9);color:#50213a;font-size:16px;font-weight:bold;cursor:pointer;box-shadow:0 8px 25px #0003}
+button:active{transform:scale(.98)}
+#message{display:none;margin-top:25px;padding:24px 22px;background:#fff8f3;color:#63334a;border-radius:20px;text-align:left;animation:appear .8s ease}
+#message h2{text-align:center;font-size:29px;font-weight:normal;color:#a43f68;margin:0 0 18px}
+#message p{font-size:17px;line-height:1.8;margin:12px 0}
+.sign{text-align:right;color:#a43f68;font-style:italic;font-size:20px;margin-top:20px}
+.small{font:12px Arial,sans-serif;color:#e8b9ca;margin-top:16px}
+footer{font:10px Arial,sans-serif;letter-spacing:2px;color:#dba9bd;margin-top:25px}
+@keyframes appear{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.float{position:fixed;top:-30px;pointer-events:none;z-index:0;animation:drop linear forwards}
+@keyframes drop{to{transform:translateY(110vh) rotate(480deg);opacity:0}}
+</style>
+</head>
+<body>
+<main>
+<section class="wrap">
+  <div class="kicker">A little celebration for my favourite person</div>
+  <span class="flower">🌷</span>
+  <h1>Happy Birthday,<br>Deepica ❤️</h1>
+  <p class="sub">To my beautiful wife, my best friend and my forever love… this little surprise is just for you.</p>
+  <button id="reveal">Open your love letter 💌</button>
+  <div class="small">Take a deep breath and tap to open your surprise</div>
+  <article id="message">
+    <h2>To the Love of My Life, Deepica ❤️</h2>
+    <p>Happy Birthday, my beautiful wife, my sweetest love and my forever person. 🌹</p>
+    <p>Sometimes I look at you and wonder how I got so lucky. Out of all the people in this world, life gave me you — and that is a gift I will never stop being thankful for. You are the smile I look for, the peace my heart needs and the love I want to come home to, every single day.</p>
+    <p>I wish I could pause time whenever you smile, hold every happy moment a little longer and gather all the stars in the sky just to show you how precious you are to me. Even the most beautiful words could never fully explain what you mean to my heart.</p>
+    <p>Thank you for standing beside me, for filling our days with love, and for making even the simplest moments feel special. I promise to keep choosing you — in the easy days, in the difficult days, in every little adventure and through every new chapter we share.</p>
+    <p>On your birthday, my wish is that life gives you the happiness you give me, the tenderness you deserve and a thousand reasons to smile. May every dream in your heart find its way to you. And whenever life feels heavy, remember that you never have to face it alone. My hand is yours to hold, my shoulder is yours to lean on and my heart is yours, always.</p>
+    <p>If I could live this life a thousand times, I would search for you in every one of them and fall in love with you all over again. You are not just a part of my story, Deepica — you are my favourite part of it. I love you more than yesterday and less than tomorrow. 💞</p>
+    <p class="sign">With all the love in my heart,<br>Your Kabilan, forever and always ❤️</p>
+  </article>
+  <footer>MADE WITH ALL MY LOVE • JUST FOR YOU</footer>
+</section>
+</main>
+<script>
+document.getElementById('reveal').addEventListener('click',function(){
+ document.getElementById('message').style.display='block';
+ this.textContent='A thousand hugs for you ❤️';this.disabled=true;
+ document.getElementById('message').scrollIntoView({behavior:'smooth',block:'nearest'});
+});
+function sprinkle(){let e=document.createElement('span');e.className='float';e.textContent=['🌸','💗','✨','🌷'][Math.floor(Math.random()*4)];e.style.left=Math.random()*100+'vw';e.style.fontSize=(15+Math.random()*17)+'px';e.style.animationDuration=(8+Math.random()*7)+'s';document.body.appendChild(e);setTimeout(()=>e.remove(),16000)}
+setInterval(sprinkle,700);
+</script>
+</body>
+</html>
